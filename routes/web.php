@@ -14,6 +14,6 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-$app->get('posts', function() {
-    return [];
+$router->get('/posts', function() {
+    return \Dribly\Tap::all();
 });
