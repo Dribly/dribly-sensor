@@ -17,3 +17,6 @@ $router->get('/', function () use ($router) {
 $router->get('/posts', function() {
     return \Dribly\Tap::all();
 });
+$router->get('/ping', function () use ($router) {
+    return ucfirst($_ENV['APP_NAME']) . " - Built on " .$router->app->version();
+});

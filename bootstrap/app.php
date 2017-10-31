@@ -99,6 +99,6 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 // TEmporary hack for core bustage
-$app->configure('view');
+//$app->configure('view');
 
 return $app;
